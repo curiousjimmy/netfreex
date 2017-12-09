@@ -1,40 +1,70 @@
 
+.header, .footer{
+    background-color: blue;
+    height: 10vh;
+}
+
 body{
     margin: 0;
 
 }
 
-.wrapper{
-
-    width: auto;
-    margin: 0 auto;
-    position: relative;
-
-/*    display: flex;
-    flex-direction: column; <-플렉스 모듈은 사용하지 않음*/
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
 }
 
-div{
-    color: black;
-    text-align: center;
+
+.main{
+    display: flex;
+    flex-direction: column;
+    flex-grow:1;
+ }
+
+.billboard{
+    display: flex;
 }
 
-.header{
-    background-color: #f2f2f2;
-    width: 100%;
-    height: 80px;
+.billboard img{
+    flex-grow: 1;
 }
 
-.content{
-    background-color: aliceblue;
-    width: 100%;
-    height: 750px;
+.content-wrapper{
+    display: flex;
+    flex-direction: column;
 }
 
-.footer{
-    background-color: lightcoral;
-    width: 100%;
-    height: 70px;
+.content-1{
+    display:flex;
+    flex-direction: column;
+    flex-grow: 1;
 }
+
+.content-1-header{
+    background: red;
+    height: 5vh;
+}
+
+.content-1-row{
+    background: skyblue;
+    height: 20vh;
+}
+
+.content-2{
+    display:flex;
+    flex-direction: column;
+}
+
+.content-2-header{
+    background: red;
+    height: 5vh;
+}
+
+.content-2-row{
+    background: skyblue;
+    height: 20vh;
+}
+
 
 
