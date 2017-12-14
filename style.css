@@ -1,7 +1,21 @@
 
-.header, .footer{
+
+div{
+    color: white;
+    text-align: center;
+    font-weight: bold;
+}
+
+.header{
+    position: absolute;
+    background: linear-gradient(to bottom, black, transparent);
+    height: 100px;
+    width: 100%;
+}
+
+.footer{
     background-color: blue;
-    height: 10vh;
+    height: 50px;
 }
 
 body{
@@ -12,15 +26,10 @@ body{
 .container {
     display: flex;
     flex-direction: column;
-    height: 100vh;
+    height: 750px;
 }
 
 
-.main{
-    display: flex;
-    flex-direction: column;
-    flex-grow:1;
- }
 
 .billboard{
     display: flex;
@@ -30,41 +39,27 @@ body{
     flex-grow: 1;
 }
 
-.content-wrapper{
-    display: flex;
-    flex-direction: column;
-}
 
-.content-1{
-    display:flex;
-    flex-direction: column;
-    flex-grow: 1;
-}
 
-.content-1-header{
+.header-1, .header-2{
     background: red;
-    height: 5vh;
+    height: 30px;
 }
 
-.content-1-row{
+.content-1-row, .content-2-row {
     background: skyblue;
-    height: 20vh;
+    height: 150px;
+
 }
 
-.content-2{
-    display:flex;
-    flex-direction: column;
+li{
+    float:left;
+    width:10%;
+    height: 150px;
+    display: block;
 }
 
-.content-2-header{
-    background: red;
-    height: 5vh;
-}
 
-.content-2-row{
-    background: skyblue;
-    height: 20vh;
-}
 
 
 
