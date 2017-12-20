@@ -66,6 +66,7 @@ body{
 
 
 
+
 .content-header{
     background: red;
     height: 30px;
@@ -78,6 +79,15 @@ body{
     justify-content: space-between;
 }
 
+.movie{
+    border-radius:10%;
+    border-style: solid;
+    border-color:black;
+}
+
+.movie:hover{
+    background-color: yellow;
+}
 
 
 

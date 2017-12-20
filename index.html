@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Netfreex</title>
     <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="jquery-3.2.1.js"></script>
 </head>
 
 <body>
@@ -23,7 +24,7 @@
 
     <div class="billboard">
       <img src="http://www.hdwallpaper.nu/wp-content/uploads/2016/05/house_of_cards_wallpaper431552.jpg"  alt="">
-     </div>
+    </div>
 
      <div class="content-wrapper">
        <div class="content">
@@ -62,6 +63,20 @@
 
     <div class="footer">this is footer</div>
 </div>
+
+
+<script>
+    $(document).ready(function(){
+
+        $('.movie').click(function(){
+            alert("The Movie Title was Clicked!");
+        });
+
+
+
+    });
+</script>
+
 
 </body>
 </html>
