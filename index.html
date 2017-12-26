@@ -6,6 +6,7 @@
     <link rel="stylesheet" type="text/css" href="style.css">
     <script src="jquery-3.2.1.js"></script>
     <link rel="stylesheet" href="slick/slick.css">
+    <link rel="stylesheet" href="slick/slick-theme.css">
 </head>
 
 <body>
@@ -57,30 +58,25 @@
 </div>
 
 
-<div class= "footer">this is footer
-            </div>
+<div class="footer">this is footer</div>
 
 
-            <script type="text/javascript" src="jquery-3.2.1.js"></script>
-            <script type="text/javascript" src="slick/slick.js"></script>
-            <script>
-                $(document).ready(function () {
+<script type="text/javascript" src="slick/slick.js"></script>
 
-                    $('.movie').click(function () {
-                        alert("The Movie Title was Clicked!");
-                    });
+<script>
+    $(document).ready(function () {
 
 
-                    $('.content-row').slick({
-                        slidesToShow: 6,
-                        slidesToScroll: 1,
-                        autoplay: true,
-                        autoplaySpeed: 2000,
-                    });
+        $('.content-row').slick({
+            slidesToShow: 4,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 2000,
+        });
 
 
-                });
-            </script>
+    });
+</script>
 
 
 </body>

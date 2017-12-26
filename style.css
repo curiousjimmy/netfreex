@@ -17,13 +17,25 @@ body{
 
 /* header area */
 
+/*
+.header{
+    display:flex;
+    background:linear-gradient(to bottom, black, #070016);
+
+}
+*/
+
+
+
+
 .header{
     background: linear-gradient(to bottom, black, #070016);
     min-height:80px;
     padding-top: 20px;
     border-bottom: solid #b9090b 3px;
-
 }
+
+
 
 
 .header .brandlogo {
@@ -99,6 +111,8 @@ body{
 
 }
 
-.content-row{
-
+.movie img{
+    width:175px;
+    height:250px;
+    margin:auto;
 }
