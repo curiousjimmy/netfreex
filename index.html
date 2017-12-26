@@ -33,7 +33,7 @@
         </div>
 
         <div class="cta-button-wrapper">
-            <button>Subscribe</button>
+            <a href="https://www.netflix.com/getstarted?action=startAction&locale=ko-KR"><button>Subscribe</button></a>
         </div>
     </div>
 
@@ -58,6 +58,7 @@
 </div>
 
 
+
 <div class="footer">this is footer</div>
 
 
@@ -73,6 +74,10 @@
             autoplay: true,
             autoplaySpeed: 2000,
         });
+
+        $('.slick-prev, .slick-next').css("width", "50px", "height", "50px");
+        $('.slick-prev').css("left", "-10px");
+        $('.slick-next').css("right", "-10px");
 
 
     });
