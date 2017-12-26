@@ -5,87 +5,82 @@
     <title>Netfreex</title>
     <link rel="stylesheet" type="text/css" href="style.css">
     <script src="jquery-3.2.1.js"></script>
+    <link rel="stylesheet" href="slick/slick.css">
 </head>
 
 <body>
 
-<div class="container">
-    <div class="header">
-        <div class="header-logo"><a href="index.html"><img src="http://freepngimages.com/wp-content/uploads/2016/10/netflix-logo.png"></a>
+<div class="header">
+    <div class="container">
+        <a href="index.html"><img class="brandlogo"
+                                  src="http://freepngimages.com/wp-content/uploads/2016/10/netflix-logo.png"></a>
+
+
+        <ul class="nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="http://google.com">About</a></li>
+            <li><a href="http://google.com">Contact</a></li>
+        </ul>
+    </div>
+</div>
+
+<div class="showcase">
+    <div class="container">
+        <div class="cta-text">
+            <h1> SEE WHAT'S NEXT </h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis, quo.</p>
         </div>
 
-        <ul class="navigation">
-            <li><a href="index.html">Home</a> </li>
-            <li><a href="http://google.com">About</a> </li>
-            <li><a href="http://google.com">Contact</a> </li>
-        </ul>
-
+        <div class="cta-button-wrapper">
+            <button>Subscribe</button>
+        </div>
     </div>
 
-    <div class="billboard">
-      <img src="billboard.jpg"  class="billboard-image">
-            <div class="cta-wrapper">
-                <div class="cta-text">
-                    <h1 class="cta-text-pitch"> SEE WHAT'S NEXT </h1>
-                    <p class ="cta-text-description">This is a mock up. Just for practice</p>
-                </div>
+</div>
 
-                <div class="cta-button-wrapper">
-                <button class="cta-button">This is a button</button>
-                </div>
-            </div>
+<div class="content">
+    <div class="container">
+        <h1 class="content-header">Popular Titles</h1>
+        <div class="content-row">
+            <div class="movie"><img src="img/blackmirror.jpg" alt=""></div>
+            <div class="movie"><img src="img/download%20(1).jpeg" alt=""></div>
+            <div class="movie"><img src="img/download.jpeg" alt=""></div>
+            <div class="movie"><img src="img/Frank_Underwood_-_House_of_Cards.jpg" alt=""></div>
+            <div class="movie"><img src="img/Game_of_Thrones_Season_1.jpg" alt=""></div>
+            <div class="movie"><img src="img/gattaca.jpg" alt=""></div>
+            <div class="movie"><img src="img/harrypotter.jpeg" alt=""></div>
+            <div class="movie"><img src="img/LEGO-Lord-of-the-Rings-Video-Game-Poster.jpg" alt=""></div>
+            <div class="movie"><img src="img/Stranger_Things_Retro_Poster_7.jpg" alt=""></div>
+            <div class="movie"><img src="img/The_Matrix_Poster.jpg" alt=""></div>
+        </div>
     </div>
-
-     <div class="content-wrapper">
-       <div class="content">
-           <div class="content-header"> content-1 header</div>
-           <div class="content-row">
-               <div class = "movie">Movie 1</div>
-               <div class = "movie">Movie 2</div>
-               <div class = "movie">Movie 3</div>
-               <div class = "movie">Movie 4</div>
-               <div class = "movie">Movie 5</div>
-               <div class = "movie">Movie 6</div>
-               <div class = "movie">Movie 7</div>
-               <div class = "movie">Movie 8</div>
-               <div class = "movie">Movie 9</div>
-               <div class = "movie">Movie 10</div>
-           </div>
-       </div>
-
-         <div class="content">
-             <div class="content-header"> content-2 header</div>
-             <div class="content-row">
-                 <div class = "movie">Movie 1</div>
-                 <div class = "movie">Movie 2</div>
-                 <div class = "movie">Movie 3</div>
-                 <div class = "movie">Movie 4</div>
-                 <div class = "movie">Movie 5</div>
-                 <div class = "movie">Movie 6</div>
-                 <div class = "movie">Movie 7</div>
-                 <div class = "movie">Movie 8</div>
-                 <div class = "movie">Movie 9</div>
-                 <div class = "movie">Movie 10</div>
-             </div>
-         </div>
-     </div>
-
-
-    <div class="footer">this is footer</div>
 </div>
 
 
-<script>
-    $(document).ready(function(){
-
-        $('.movie').click(function(){
-            alert("The Movie Title was Clicked!");
-        });
+<div class= "footer">this is footer
+            </div>
 
 
+            <script type="text/javascript" src="jquery-3.2.1.js"></script>
+            <script type="text/javascript" src="slick/slick.js"></script>
+            <script>
+                $(document).ready(function () {
 
-    });
-</script>
+                    $('.movie').click(function () {
+                        alert("The Movie Title was Clicked!");
+                    });
+
+
+                    $('.content-row').slick({
+                        slidesToShow: 6,
+                        slidesToScroll: 1,
+                        autoplay: true,
+                        autoplaySpeed: 2000,
+                    });
+
+
+                });
+            </script>
 
 
 </body>

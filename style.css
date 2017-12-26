@@ -1,132 +1,104 @@
-
-
-
-
-
-/* this is header area */
-.header{
-    position: absolute;
-    background: linear-gradient(to bottom, black, transparent);
-    height: 100px;
-    width: 100%;
-    display:flex;
-    justify-content: space-between;
-}
-
-.header-logo img{
-
-    width:150px;
-    height:100px;
-
-}
-
-.navigation {
-    display:flex;
-    list-style: none;
-    color: red;
-}
-
-.navigation a{
-    text-decoration: none;
-    display: block;
-    padding: 1em;
-    color:white;
-}
-
-.navigation a:hover{
-    background: gray;
-}
-
-
-/* this is body area */
-
 body{
-    margin: 0;
-
-}
-
-.container {
-    display: flex;
-    flex-direction: column;
-    height: 750px;
-}
-
-
-
-/*billboard area */
-
-.billboard-image{
-    max-width:100%;
-    max-height:100%;
-    display:block;
-}
-
-
-.cta-wrapper{
-    position:absolute;
-    top: 45%;
-    left: 3%;
-    max-width:60%;
-}
-
-.cta-text{
-    top:0;
-    position:relative;
-}
-
-.cta-text-pitch{
-    font-size: 3em;
-    color:white;
-}
-
-.cta-text-description{
-    font-size: 1em;
+    font-family: arial;
     color: white;
+    margin:0;
 }
 
 
-.cta-button{
-    font-size:0.5em;
-    min-width:112px;
-    min-height:44px;
-    background:red;
+
+/* global */
+
+.container{
+    width: 90%;
+    margin:auto;
+    overflow:hidden;
+}
+
+
+/* header area */
+
+.header{
+    background: linear-gradient(to bottom, black, #070016);
+    min-height:80px;
+    padding-top: 20px;
+    border-bottom: solid #b9090b 3px;
+
+}
+
+
+.header .brandlogo {
+    width: 175px;
+    height: 110px;
+}
+
+.header .nav {
+    float: right;
+}
+
+.header .nav li{
+    display:inline-block;
+    padding: 0 10px;
+    margin-top: 24px;
+}
+
+.header .nav li a{
+    text-decoration: none;
     color:white;
-    border:none;
+    text-transform: uppercase;
 }
 
-/*content area*/
+.header .nav li a:hover{
+    color: #b9090b;
+    font-weight:bold;
+}
+
+/* showcase area */
+
+.showcase{
+    min-height:600px;
+    background:url(billboard.jpg);
+    background-size:cover;
+    opacity: 10.0;
+}
+
+.showcase h1{
+    margin-top:350px;
+    color:white;
+    font-size:65px;
+}
+
+.showcase p{
+    font-size:15px;
+    font-weight:bold;
+}
+
+.showcase button{
+    background: #b9090b;
+    color:white;
+    width: 250px;
+    height: 50px;
+    border:none;
+    font-size:30px;
+    text-transform: uppercase;
+}
+
+/* content */
+
+.content{
+    background: black;
+}
 
 .content-header{
-    background: red;
-    height: 30px;
+    margin: 10px 0;
+    padding: 5px 0 5px 5px;
+    font-size:15px;
+    font-weight:bold;
+    color: white;
+    background: #b9090b;
+
+
 }
 
 .content-row{
-    background: skyblue;
-    height: 150px;
-    display:flex;
-    justify-content: space-between;
+
 }
-
-.movie{
-    border-radius:10%;
-    border-style: solid;
-    border-color:black;
-}
-
-.movie:hover{
-    background-color: yellow;
-}
-
-
-/*footer */
-
-.footer{
-    background-color: blue;
-    height: 50px;
-}
-
-
-
-
-
