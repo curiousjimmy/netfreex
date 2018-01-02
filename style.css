@@ -115,5 +115,23 @@ body{
 .movie img{
     width:175px;
     height:250px;
-    margin:auto;
+    margin:0;
+    padding:0;
+    border:0;
 }
+
+/* Arrow */
+
+.prev{
+    width:30px;
+    height:30px;
+    left:-25px;
+}
+
+.next{
+    width:30px;
+    height:30px;
+    float:right;
+    left:-25px;
+}
+

@@ -7,6 +7,8 @@
     <script src="jquery-3.2.1.js"></script>
     <link rel="stylesheet" href="slick/slick.css">
     <link rel="stylesheet" href="slick/slick-theme.css">
+
+
 </head>
 
 <body>
@@ -42,6 +44,10 @@
 <div class="content">
     <div class="container">
         <h1 class="content-header">Popular Titles</h1>
+
+
+        <img class="prev" src="img/prevarrow.png">
+        <img class="next" src="img/nextarrow.png">
         <div class="content-row">
             <div class="movie"><img src="img/blackmirror.jpg" alt=""></div>
             <div class="movie"><img src="img/download%20(1).jpeg" alt=""></div>
@@ -73,12 +79,23 @@
             slidesToScroll: 1,
             autoplay: true,
             autoplaySpeed: 2000,
+            prevArrow: $('.prev'),
+            nextArrow: $('.next'),
+
         });
 
+
+
+
+
+
+
+
+        /*
         $('.slick-prev, .slick-next').css("width", "50px", "height", "50px");
         $('.slick-prev').css("left", "-10px");
         $('.slick-next').css("right", "-10px");
-
+*/
 
     });
 </script>
